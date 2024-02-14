@@ -22,6 +22,8 @@ Update the `index.html` file to display a form for entering payment information.
 
 In addition to looking similar to the image above, make sure you meet the following requirements:
 
+- [ ] Your whole form should be wrapped with a `form` tag
+
 - [ ] Your submit button should be an `input` element, with the text `Submit Payment`.
 
 - [ ] You should have all four radio buttons listed above.
@@ -41,6 +43,8 @@ In addition to looking similar to the image above, make sure you meet the follow
 - [ ] The Credit Card field should be a `tel` type, have a placeholder of `xxxx xxxx xxxx xxxx`, and be required.
 
 - [ ] The Expiration Date field should be a `text` type, have a corresponding label tag, have an id of `expiration-date`, and be required.
+
+- [ ] Look into [fieldset](https://www.w3schools.com/tags/tag_fieldset.asp)
 
 ### Bonus
 
