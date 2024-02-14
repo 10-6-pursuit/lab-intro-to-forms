@@ -2,9 +2,7 @@
 
 In this lab, you will have an opportunity to build a form in HTML.
 
-## Assessment Setup
-
-### Getting started
+## Getting started
 
 1. Fork and clone this repository.
 
