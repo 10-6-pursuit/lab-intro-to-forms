@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Payment form</title>
+	</head>
+	<body>
+		<h1>Payment Form</h1>
+		<p>Required fields are marked by an <span style="color: red">*</span></p>
+
+		<form action="">
+			<fieldset>
+				<legend>Contact Information</legend>
+				<div>
+					<label for="">Mx.</label>
+					<input type="radio" name="prefix" id="mx" checked />
+				</div>
+				<div>
+					<label for="">Mr.</label>
+					<input type="radio" name="prefix" id="mr" />
+				</div>
+				<div>
+					<label for="">Ms.</label>
+					<input type="radio" name="prefix" id="ms" />
+				</div>
+				<div>
+					<label for="">Mrs.</label>
+					<input type="radio" name="prefix" id="mrs" />
+				</div>
+				<div>
+					<label for="">Name <span style="color: red">*</span></label>
+					<input
+						type="text"
+						placeholder="Enter name"
+						id="username"
+						name="username"
+						required
+					/>
+				</div>
+				<div>
+					<label for="">Email <span style="color: red">*</span></label>
+					<input
+						type="email"
+						placeholder="Enter email"
+						id="userEmail"
+						name="userEmail"
+						required
+					/>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Payment information</legend>
+
+				<select name="card" id="card" required>
+					<option value="Visa">Visa</option>
+					<option value="Master Card">Master Card</option>
+					<option value="Master Card">American Express</option>
+					<option value="Master Card">Discover</option>
+				</select>
+				<label for="card-number"
+					>Credit Card Number <span style="color: red">*</span></label
+				>
+
+				<input
+					type="tel"
+					id="card-number"
+					placeholder="xxxx xxxx xxxx xxxx"
+					required
+				/>
+
+				<div>
+					<label for="date"
+						>Expiration Date <span style="color: red">*</span></label
+					>
+					<input
+						type="date"
+						id="expiration-date"
+						placeholder="select date"
+						required
+					/>
+				</div>
+			</fieldset>
+			<button type="submit">Submit Payment</button>
+		</form>
+	</body>
+</html>
