@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <h1>Payment Form</h1>
+</head>
+<body>
+    <p>Required feilds are marked by *</p>
+    <form action="">
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label>Mx.<input id="mx" type="radio" name="prefix" value="mx" checked></label>
+            <label>Mr.<input id="mr" type="radio" name="prefix" value="mr"></label>
+            <label>Ms.<input id="ms" type="radio" name="prefix" value="ms"></label>
+            <label>Mrs.<input id="mrs" type="radio" name="prefix" value="mrs"></label>
+            <label>Name <input id="name" type="text" required></label>
+            <label>Email <input id="email" type="email" required></label>
+        </fieldset>
+        
+        <input type="button" value="Submit Payment">
+    </form>
+</body>
+</html>
