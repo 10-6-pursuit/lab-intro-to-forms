@@ -1,46 +1,47 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>The New CashApp</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
-  </head>
-  <body>
-    <h1>Payment Form</h1>
-    <p>required fields are marked by *</p>
-    <form>
-      <fieldset>
-        <legend>Contact Information</legend>
-        <label for="radio-Mx">Mx.</label><br>
-        <input type="radio" name="title" id="radio-Mx" value="Mx." checked/><br>
-        <label for="radio-Mr">Mr.</label><br>
-        <input type="radio" name="title" id="radio-Mr" value="Mr." /><br>
-        <label for="radio-Ms">Ms.</label><br>
-        <input type="radio" name="title" id="radio-Ms" value="Ms." /><br>
-        <label for="radio-Mrs">Mrs.</label><br>
-        <input type="radio" name="title" id="radio-Mrs" value="Mrs." /><br>
-        <label for="name">Name*</label><br>
-        <input type="text" name="name" id="name" required/>
-        <label for="email">Email*</label><br>
-        <input type="text" Email="email" id="email" required/>
-      </fieldset>
-      <fieldset>
-        <legend>Payment Information</legend>
-        <select name="cardType" id="cardType">
-          <option value="visa">Visa</option>
-          <option value="mastercard">Mastercard</option>
-          <option value="american-express">American-Express</option>
-          <option value="discover">Discover</option>
-        </select>
-        <label for="creditCardNumber">Credit Card Number*</label><br>
-        <input type="tel" name="creditCardNumber" id="creditCardNumber" placeholder="xxxx xxxx xxxx xxxx" required><br>
-        <label for="expirationDate">Expiration Date</label>
-        <input type="text" name="expirationDate" id="expiration-date" required>
-      </fieldset>
-    </form>
-    </body>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>The New CashApp</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="">
+</head>
+<body>
+  <h1>Payment Form</h1>
+  <p>required fields are marked by *</p>
+  <form>
+    <fieldset>
+      <legend>Contact Information</legend>
+      <label for="radio-Mx">Mx.</label><br>
+      <input type="radio" name="title" id="radio-Mx" value="Mx." checked/><br>
+      <label for="radio-Mr">Mr.</label><br>
+      <input type="radio" name="title" id="radio-Mr" value="Mr." /><br>
+      <label for="radio-Ms">Ms.</label><br>
+      <input type="radio" name="title" id="radio-Ms" value="Ms." /><br>
+      <label for="radio-Mrs">Mrs.</label><br>
+      <input type="radio" name="title" id="radio-Mrs" value="Mrs." /><br>
+      <label for="name">Name*</label><br>
+      <input type="text" name="name" id="name" required/>
+      <label for="email">Email*</label><br>
+      <input type="text" Email="email" id="email" required/>
+    </fieldset>
+    <fieldset>
+      <legend>Payment Information</legend>
+      <select name="cardType" id="cardType">
+        <option value="visa">Visa</option>
+        <option value="mastercard">Mastercard</option>
+        <option value="american-express">American-Express</option>
+        <option value="discover">Discover</option>
+      </select>
+      <label for="creditCardNumber">Credit Card Number*</label><br>
+      <input type="tel" name="creditCardNumber" id="creditCardNumber" placeholder="xxxx xxxx xxxx xxxx" required><br>
+      <label for="expirationDate">Expiration Date</label>
+      <input type="text" name="expirationDate" id="expiration-date" required>
+    </fieldset>
+    <input type="submit" value="Submit Payment" />
+  </form>
+  </body>
   <script src="" async defer></script>
 </html>
