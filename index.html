@@ -11,15 +11,38 @@
     <form action="">
         <fieldset>
             <legend>Contact Information</legend>
-            <label>Mx.<input id="mx" type="radio" name="prefix" value="mx" checked></label>
-            <label>Mr.<input id="mr" type="radio" name="prefix" value="mr"></label>
-            <label>Ms.<input id="ms" type="radio" name="prefix" value="ms"></label>
-            <label>Mrs.<input id="mrs" type="radio" name="prefix" value="mrs"></label>
-            <label>Name <input id="name" type="text" required></label>
-            <label>Email <input id="email" type="email" required></label>
+            <label>Mx.<br/>
+                <input id="mx" type="radio" name="prefix" value="mx" checked></label>
+            <br/>
+            <label>Mr.<br/>
+                <input id="mr" type="radio" name="prefix" value="mr"></label>
+            <br/>
+            <label>Ms.<br/>
+                <input id="ms" type="radio" name="prefix" value="ms"></label>
+            <br/>
+            <label>Mrs.<br/>
+                <input id="mrs" type="radio" name="prefix" value="mrs"></label>
+            <br/>
+            <label>Name <br/>
+                <input id="name" type="text" required></label>
+            <br/>
+            <label>Email <br/>
+                <input id="email" type="email" required></label>
         </fieldset>
-        
-        <input type="button" value="Submit Payment">
+        <fieldset>
+            <legend>Payment Information</legend>
+            <label>
+            <select id="card-type" name="card">
+                <option value="visa" selected>Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="american-express">American Express</option>
+                <option value="discover">Discover</option>
+            </select>
+            </label>
+            <label> Credit Card Number <input type="tel" placeholder="xxxx xxxx xxxx xxxx" required></label>
+            <label> Expiration Date <input type="text" required></label>
+        </fieldset>
+        <input type="submit" value="Submit Payment">
     </form>
 </body>
 </html>
