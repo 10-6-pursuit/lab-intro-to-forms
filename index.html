@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Payment Form</h1>
+    <p><strong>Required fields are marked by *</strong></p>
+    <form action="">
+        <fieldset>
+        <legend>Contact Information</legend>
+        <label>Mx.<br>
+        <input type="radio" name="honorifics" id="Mx" value="Mx"><br></label>
+        <label>Mr.<br>
+        <input type="radio" name="honorifics" id="Mr" value="Mr"><br></label>
+        <label>Ms.<br>
+        <input type="radio" name="honorifics" id="Ms" value="Ms"><br></label>
+        <label>Mrs.<br>
+        <input type="radio" name="honorifics" id="Mrs" value="Mrs"><br></label>
+        <label>Name<br>
+        <input type="text" id="name"><br></label>
+        <label>Email<br>
+        <input type="text" id="Email"><br></label>
+    </fieldset>
+    <fieldset>
+        <legend>Payment Information</legend>
+        <select name="Company" id="Company">
+            <option value="Visa">Visa</option>
+            <option value="Mastercard">Mastercard</option>
+            <option value="American Express">American Express</option>
+        </select><br>
+        <label>Credit Card Number<br>
+        <input type="text" name="Credit Card Number" id="cc" placeholder="xxxx xxxx xxxx xxxx"><br></label>
+        <label>
+            Expiration date<br>
+            <input type="text" name="expirationDate" id="expiration-date">
+        </label>
+    </fieldset>
+    <button>Submit Payment</button>
+    </form>
+</body>
+</html>
