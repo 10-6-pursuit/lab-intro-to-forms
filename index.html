@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h2>Payment Form</h1>
+            <p>
+                Required fields are marked by *
+            </p>
+       <fieldset>
+        <legend>Contact Information</legend>
+        <label >
+            Mx.
+            <br>
+            <input checked name='contact'type="radio">
+        </label>
+        <br>
+        <label >
+            Mr.
+            <br>
+            <input name='contact'type="radio">
+        </label>
+        <br>
+        <label >
+            Ms.
+            <br>
+            <input name='contact'type="radio">
+        </label>
+        <br>
+        <label >
+            Mrs.
+            <br>
+            <input name='contact'type="radio">
+        </label>
+        <br>
+        <label >
+            Name
+            <br>
+            <input type="text" name="" id="name" required>
+        </label>
+        <br>
+        <label >
+            Email
+            <br>
+            <input type="email" name="" id="email"required>
+        </label>
+       </fieldset>
+       <fieldset>
+        <legend>Payment Information</legend>
+        <label >
+            <select name="" id="">
+                <option value="visa">Visa       </option>
+                <option value="mastercard">Mastercard</option>
+    <option value="american-express">American Express</option>
+    <option value="discover">Discover</option>
+
+            </select>
+        </label>
+        
+        <br>
+        <label >
+            Credit Card Number
+            <input required type="tel" placeholder="xxxx xxxx xxxx xxxx">
+        </label>
+        <br>
+        <label >
+            Expiration Date
+            <br>
+            <input type="text" name="" id="expiration-date"required>
+        </label>
+       </fieldset>
+       <label>
+        <input type="submit" name="" id=""value='Submit Payment'>
+       </label>
+    </form>
+    <br>
+</body>
+</html>
