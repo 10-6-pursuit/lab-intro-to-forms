@@ -14,32 +14,35 @@
   <form>
     <fieldset>
       <legend>Contact Information</legend>
-      <label for="radio-Mx">Mx.</label><br>
-      <input type="radio" name="title" id="radio-Mx" value="Mx." checked/><br>
+      <span>Title:*</span><br>
+      <input type="radio" name="title" id="radio-Mx" value="Mx." checked/>
+      <label for="radio-Mx">Mx.</label> <br>
+      <input type="radio" name="title" id="radio-Mr" value="Mr." required/>
       <label for="radio-Mr">Mr.</label><br>
-      <input type="radio" name="title" id="radio-Mr" value="Mr." required/><br>
+      <input type="radio" name="title" id="radio-Ms" value="Ms." required/>
       <label for="radio-Ms">Ms.</label><br>
-      <input type="radio" name="title" id="radio-Ms" value="Ms." required/><br>
-      <label for="radio-Mrs">Mrs.</label><br>
-      <input type="radio" name="title" id="radio-Mrs" value="Mrs." /><br>
-      <label for="name">Name*</label><br>
+      <input type="radio" name="title" id="radio-Mrs" value="Mrs." />
+      <label for="radio-Mrs">Mrs.</label><br><br>
+      <label for="name">Name:*</label><br>
       <input type="text" name="name" id="name" required/><br>
-      <label for="email">Email*</label><br>
+      <label for="email">Email:*</label><br>
       <input type="text" Email="email" id="email" required/>
-    </fieldset>
+    </fieldset><br>
     <fieldset>
       <legend>Payment Information</legend>
-      <select name="cardType" id="cardType">
+      <label for="card-type">Credit Card Type:*</label><br>
+      <select name="cardType" id="card-type">
+        <option>-- Select Credit Card Type--</option>
         <option value="visa">Visa</option>
         <option value="mastercard">Mastercard</option>
         <option value="american-express">American-Express</option>
         <option value="discover">Discover</option>
-      </select>
-      <label for="creditCardNumber">Credit Card Number*</label><br>
-      <input type="tel" name="creditCardNumber" id="creditCardNumber" placeholder="xxxx xxxx xxxx xxxx" required><br>
+      </select><br>
+      <label for="credit-card-number">Credit Card Number*</label><br>
+      <input type="tel" name="creditCardNumber" id="credit-card-number" placeholder="xxxx xxxx xxxx xxxx" required><br>
       <label for="expiration-date">Expiration Date*</label><br>
       <input type="text" name="expirationDate" id="expiration-date" required>
-    </fieldset>
+    </fieldset><br>
     <input type="submit" value="Submit Payment" />
   </form>
   </body>
