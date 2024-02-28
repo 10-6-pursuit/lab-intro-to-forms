@@ -1,55 +1,100 @@
 <!doctype html>
 <html>
 <head>
-<title>Our Funky HTML Page</title>
+<title>Payment Form></Form></title>
 <meta name="description" content="Our first page">
 <meta name="keywords" content="html tutorial template">
 </head>
+<h2>Payment Form</h2>
 <body>
+
+
 
 <form>
 
-  <fieldset>
+    <small>Required fields are marked by *</small>
 
-    <input>Submit Payment</input>
+ 
+    <fieldset>
+     <input type="radio" checked>Mx.</input>
+    </fieldset>
 
-    <input type="radio" checked>Mx.</input>
-    <input type="radio">Mr.</input>
+    <fieldset>
+     <input type="radio">Mr.</input>
+    </fieldset>
+    
+    <fieldset>
     <input type="radio" checked>Ms.</input>
+    </fieldset>
+
+    <fieldset>
     <input type="radio">Mrs.</input>
+    </fieldset>
 
-    <input>name</input>
-
-    <input id="email">email</input>
-
-    <select name="Visa" id="Visa">
-        <option value="visa">...</option>
-        
-      </select>
-
-    <select name="Mastercard" id="Mastercard">
-        <option value="mastercard">...</option>
-        
-      </select>
-
-    <select name="American Express" id="American Express">
-        <option value="american express">...</option>
     
-      </select>
 
-    <select name="Discover" id="Discover">
-        <option value="discover">...</option>
+
+    <fieldset>
+
+    <label for="Name">Name</label>
+
+    </fieldset>
     
-      </select>
+
+    <fieldset>
+
+    <input id="name"></input>
+
+    </fieldset>
 
 
-    <input id="telNo" name="telNo" type="tel" placeholder="xxxx xxxx xxxx xxxx" />
 
-    <input type="text" id="expiration-date"/>
+    <fieldset>
+
+    <label for="Email">Email</label>
+
+    </fieldset>
+
+    <fieldset>
+    
+    <input id="email"></input>
+
+    </fieldset>
+
+<fieldset>
+<select>
+ <option value="visa">Visa</option>
+  <option value="mastercard">Mastercard</option>
+  <option value="american express">American Express</option>
+  <option value="discover">Discover</option>
+</select>
+
+<label for="Credit Card Number">Credit Card Number:</label>
+</fieldset>
+
+<fieldset>
+    
+    <input id="telNo" name="telNo" type="tel" placeholder="xxxx xxxx xxxx xxxx" >
+
+</fieldset>
+
+
+<fieldset>
+
+ <label for="Expiration Date">Expiration Date</label>
+</fieldset>
+    
+ <input type="text" id="expiration-date"/>
 
   </fieldset>
 
+
+    <fieldset>
+        
+        <input type="Submit"></input>
     
+    </fieldset>
+   
 </form>
 
 </body>
