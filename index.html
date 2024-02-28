@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Form</title>
+    <meta name="description" content="Please input your payment information, name, and email address. Written by Patrick R Rogers 10.6 NW for Module 2 Pursuit">
 </head>
 <body>
     <h1>Payment Form</h1>
@@ -38,12 +39,15 @@
         </fieldset>
         <fieldset>
             <legend>Payment Information</legend>
-            <select name="creditCardType" id="creditCardType">
-                <option value="visa">Visa</option>
-                <option value="mastercard">Mastercard</option>
-                <option value="american-express">American Express</option>
-                <option value="discover">Discover</option>
-            </select>
+            <label for="creditCardType">Card Type
+                <br>
+                <select name="creditCardType" id="creditCardType">
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="american-express">American Express</option>
+                    <option value="discover">Discover</option>
+                </select>
+            </label>
             <br>
             <label for="creditCardNumber">Credit Card Number
                 <br>
