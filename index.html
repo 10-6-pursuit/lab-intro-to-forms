@@ -4,6 +4,7 @@
 <title>Payment Form></Form></title>
 <meta name="description" content="Our first page">
 <meta name="keywords" content="html tutorial template">
+<link rel="stylesheet" href="style.css">
 </head>
 <h2>Payment Form</h2>
 <body>
@@ -16,84 +17,57 @@
 
  
     <fieldset>
-     <input type="radio" checked>Mx.</input>
-    </fieldset>
+    <legend>Contact Information</legend>
+    <label for="Mr.">Mx.</label>
+     <input type="radio" id="Mr."></input>
 
-    <fieldset>
-     <input type="radio">Mr.</input>
-    </fieldset>
-    
-    <fieldset>
-    <input type="radio" checked>Ms.</input>
-    </fieldset>
+    <label for="Mr.">Mr.</label>
+     <input type="radio"></input>
 
-    <fieldset>
-    <input type="radio">Mrs.</input>
-    </fieldset>
+    <label for="Mr.">Ms.</label>
+     <input type="radio"></input>
 
-    
-
-
-    <fieldset>
+    <label for="Mr.">Mrs.</label>
+     <input type="radio"></input>
 
     <label for="Name">Name</label>
-
-    </fieldset>
-    
-
-    <fieldset>
-
     <input id="name"></input>
 
-    </fieldset>
-
-
-
-    <fieldset>
-
     <label for="Email">Email</label>
-
-    </fieldset>
-
-    <fieldset>
-    
     <input id="email"></input>
 
+
     </fieldset>
 
 <fieldset>
-<select>
- <option value="visa">Visa</option>
-  <option value="mastercard">Mastercard</option>
-  <option value="american express">American Express</option>
-  <option value="discover">Discover</option>
-</select>
+    <legend>Payment Information</legend>
+    <select>
+    <option value="visa">Visa</option>
+    <option value="mastercard">Mastercard</option>
+    <option value="american express">American Express</option>
+    <option value="discover">Discover</option>
+    </select>
 
-<label for="Credit Card Number">Credit Card Number:</label>
-</fieldset>
-
-<fieldset>
-    
+<label for="Credit Card Number">Credit Card Number:</label>    
     <input id="telNo" name="telNo" type="tel" placeholder="xxxx xxxx xxxx xxxx" >
 
-</fieldset>
 
 
-<fieldset>
+
+
 
  <label for="Expiration Date">Expiration Date</label>
-</fieldset>
+
     
  <input type="text" id="expiration-date"/>
 
-  </fieldset>
 
-
-    <fieldset>
         
-        <input type="Submit"></input>
+        
     
-    </fieldset>
+</fieldset>
+
+<button>Submit Payment</button>
    
 </form>
 
