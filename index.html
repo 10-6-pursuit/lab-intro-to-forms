@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <!-- <link href="style.css" rel="stylesheet" type="text/css" -->
+    <style>
+        /* Focus styles */
+        :focus {
+            outline: 2px solid blue; /* Change the color and style as needed */
+        }
+    </style>
+</head>
+<body>
+    <form aria-labelledby="form-heading">
+        <!-- Skip link -->
+        <a href="#main-content" class="skip-link" aria-label="Skip to main content">Skip to main content</a>
+
+        <h1 id="form-heading">Payment Form</h1>
+        <p>Required fields are marked by *</p>
+
+        <fieldset>
+            <legend>Contact Information</legend>
+            
+            <label for="title-mx">Title:</label><br />
+            <input type="radio" id="title-mx" name="title" checked aria-label="Mx." /><label for="title-mx">Mx.</label><br />
+            
+            <input type="radio" id="title-mr" name="title" aria-label="Mr." /><label for="title-mr">Mr.</label><br />
+            
+            <input type="radio" id="title-ms" name="title" aria-label="Ms." /><label for="title-ms">Ms.</label><br />
+            
+            <input type="radio" id="title-mrs" name="title" aria-label="Mrs." /><label for="title-mrs">Mrs.</label><br />
+            
+            <label for="name">Name *:</label><br />
+            <input type="text" id="name" name="name" required aria-required="true" /><br />
+
+            <label for="email">Email *:</label><br />
+            <input type="email" id="email" name="email" required aria-required="true" />
+        </fieldset>
+
+        <fieldset>
+            <legend>Payment Information</legend>
+            <label for="credit-card">Select Card *:</label><br />
+            <select name="card" id="credit-card" required aria-required="true">
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="american express">American Express</option>
+                <option value="discover">Discover</option>
+            </select>
+
+            <label for="cc-number">Credit Card Number *:</label><br />
+            <input type="tel" id="cc-number" name="cc-number" placeholder="xxxx xxxx xxxx xxxx" required aria-required="true" /><br />
+
+            <label for="cc-exp">Expiration Date *:</label><br />
+            <input type="text" id="expiration-date" name="cc-exp" required aria-required="true" /><br />
+        </fieldset>
+
+        <input type="Submit" value="Submit Payment" aria-label="Submit Payment"/>
+        
+        <!-- Main content -->
+        <div id="main-content">
+            <!-- Main content goes here -->
+        </div>
+    </form>
+</body>
+</html>
